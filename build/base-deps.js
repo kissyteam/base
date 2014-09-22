@@ -1,0 +1,1 @@
+modulex.config("requires",{"base":["modulex-util","attribute"]});

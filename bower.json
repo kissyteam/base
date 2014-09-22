@@ -1,0 +1,24 @@
+{
+    "name": "modulex-base",
+    "author": "yiminghe <yiminghe@gmail.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/kissyteam/base.git"
+    },
+    "ignore": [
+        "**/*",
+        "!build/**/*",
+        "!lib/**/*",
+        "!meta/**/*",
+        "!index.js"
+    ],
+    "dependencies": {
+        "modulex": "modulex#master",
+        "ua": "modulex-ua#master",
+        "feature": "modulex-feature#master",
+        "util": "modulex-util#master",
+        "attribute": "modulex-attribute#master",
+        "event-custom": "modulex-event-custom#master"
+    }
+}
