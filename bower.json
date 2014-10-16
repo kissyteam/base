@@ -14,11 +14,11 @@
         "!index.js"
     ],
     "dependencies": {
-        "modulex": "modulex#master",
-        "ua": "modulex-ua#master",
-        "feature": "modulex-feature#master",
-        "util": "modulex-util#master",
-        "attribute": "modulex-attribute#master",
-        "event-custom": "modulex-event-custom#master"
+        "modulex": "*",
+        "ua": "modulex-ua#1.x",
+        "feature": "modulex-feature#1.x",
+        "util": "modulex-util#1.x",
+        "attribute": "modulex-attribute#1.x",
+        "event-custom": "modulex-event-custom#1.x"
     }
 }
