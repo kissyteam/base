@@ -56,6 +56,11 @@
     "gulp-wrapper": "^0.1.5",
     "precommit-hook": "^1.0.7"
   },
+  "dependencies": {
+     "modulex-util": "1.x",
+     "modulex-attribute": "1.x",
+     "modulex-event-custom": "1.x"
+  },
   "precommit": [
     "lint"
   ],

@@ -13,12 +13,14 @@
         "!meta/**/*",
         "!index.js"
     ],
-    "dependencies": {
+    "devDependencies": {
         "modulex": "*",
-        "ua": "modulex-ua#1.x",
-        "feature": "modulex-feature#1.x",
-        "util": "modulex-util#1.x",
-        "attribute": "modulex-attribute#1.x",
-        "event-custom": "modulex-event-custom#1.x"
+        "modulex-ua": "1.x",
+        "modulex-feature": "1.x",
+    },
+    "dependencies": {
+        "modulex-util": "1.x",
+        "modulex-attribute": "1.x",
+        "modulex-event-custom": "1.x"
     }
 }
