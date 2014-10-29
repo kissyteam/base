@@ -16,7 +16,7 @@
     "devDependencies": {
         "modulex": "*",
         "modulex-ua": "1.x",
-        "modulex-feature": "1.x",
+        "modulex-feature": "1.x"
     },
     "dependencies": {
         "modulex-util": "1.x",
