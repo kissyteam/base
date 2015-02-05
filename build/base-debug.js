@@ -1,8 +1,4 @@
-/*
-Copyright 2014, modulex-base@1.0.1
-MIT Licensed
-build time: Thu, 16 Oct 2014 04:41:19 GMT
-*/
+//! Copyright 2015, kissy-base@1.0.3 MIT Licensed, build time: Thu, 05 Feb 2015 05:42:31 GMT 
 modulex.add("base", ["modulex-util","attribute"], function(require, exports, module) {
 var modulexUtil = require("modulex-util");
 var attribute = require("attribute");
@@ -208,7 +204,7 @@ base = function (exports) {
     }
   });
   util.mix(Base, {
-    version: '1.0.1',
+    version: '1.0.3',
     __hooks__: {
       initializer: __getHook(),
       destructor: __getHook('__destructor', true)
