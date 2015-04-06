@@ -6,15 +6,17 @@ extend() 可以接受多个object作为参数，object 中的 函数，将注入
 
 {ATTRS:{}} 是特殊的 object ，可以用于配置类的属性。
 
-也接受多个类(function)作为参数（数组），表示类的继承。
+也接受多个类(function)作为参数（必须是数组），表示类的继承。
 
 继承于 base 的类，必须使用 new 进行初始化。
+
+[Base 所有特性演示](https://jsfiddle.net/minghe36/dgqyxus5/)（demo比较复杂，可以看完下面的api内容，再看这个demo）。
 
 #### 使用例子
 
 通过传递 object ，扩展类的方法。
 
-[demo]()
+[demo](https://jsfiddle.net/minghe36/pkek1vcg/)
 
 	var Base = require('base');
 	//使用Base.extend() 类继承于 Base
@@ -30,7 +32,7 @@ extend() 可以接受多个object作为参数，object 中的 函数，将注入
 
 通过传递 ATTRS object ，扩展类的属性。
 
-[demo]()
+[demo](https://jsfiddle.net/minghe36/438mx0tz/)
 
 	 var Base = require('base');
      var DemoClass = Base.extend({},{
@@ -50,8 +52,6 @@ extend() 可以接受多个object作为参数，object 中的 函数，将注入
 
 可以继承其他类：
 
-[demo]()
-
 	 var Base = require('base');
      var DemoClass = Base.extend([Tip],{
         show: function(){
@@ -63,6 +63,8 @@ extend() 可以接受多个object作为参数，object 中的 函数，将注入
 留意是数组。
 
 如果是简单继承一个类，可以使用如下写法：
+
+[demo](https://jsfiddle.net/minghe36/Lqjskb3u/)
 
     var A = Base.extend({
         m: function (value) {
@@ -171,3 +173,7 @@ destroy() ：
         }
     });
     tip.show();
+    
+### get('attr')/set('attr','xxx')
+
+属性获取和配置文档请看[attribute]()文档。

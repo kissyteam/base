@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>继承类</title>
+    <script src="//g.alicdn.com/kissy/k/6.0.0/seed-min.js" charset="utf-8" data-config="{combine:true}"></script>
+</head>
+<body>
+<h2>继承类</h2>
+<script>
+    KISSY.use('base,node',function(S,Base,Node){
+        var $ = Node.all;
+        var A = Base.extend({
+            m: function (value) {
+                $('body').append('<p>m(): '+value+'</p>');
+                return value;
+            }
+        });
+
+        var B = A.extend({
+
+        });
+
+        var b = new B();
+        b.m(1);
+    });
+</script>
+</body>
+</html>
